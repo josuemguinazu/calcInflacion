@@ -18,7 +18,7 @@ function btnInflacion() {
     alert(
       `La inflación mensual es del ${inflacionMensual}%, es decir, lo que hoy vale $${numeroX}, dentro de ${cantidadMeses} meses, va a valer $${calculoInflacion}`
     );
-    alert(`A este ritmo, la inflación anual estimada será del ${inflacionMensual * 12}%`);
+    alert(`A este ritmo, la inflación anual estimada será del ${(inflacionMensual * 12).toFixed(2)}%`);
   }
 }
 
@@ -68,6 +68,6 @@ function incremMeses() {
     let diferencia = primerValor - segundoValor;
     let resultadoIncremDecrem = ((diferencia / segundoValor) * 100).toFixed(2);
     let meses = (resultadoIncremDecrem / cuantosMeses).toFixed(2);
-    alert(`En ${cuantosMeses} meses el aumento es del ${resultadoIncremDecrem}%, es decir un aumento del ${meses}% mensual.`);
+    alert(`En ${cuantosMeses} meses el aumento es del ${resultadoIncremDecrem}%, es decir, un aumento del ${meses}% mensual.`);
   }
 }

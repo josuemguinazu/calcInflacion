@@ -21,6 +21,7 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 h1 {
+  margin-top: 2%;
   font-size: 4.5rem;
 }
 h2 {
@@ -96,7 +97,7 @@ button:hover {
 }
 footer {
   margin-top: 14vh;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 .icons {
   display: flex;
@@ -112,9 +113,11 @@ footer {
 
 @media (max-width: 688px) {
   header {
-    width: 95%;
+    width: 92%;
+    margin: 0 auto;
   }
   h1 {
+    margin-top: 4%;
     font-size: 2.8rem;
   }
   h2 {
