@@ -1,7 +1,9 @@
 /* titulos */
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Orbitron&display=swap');
 /* textos */
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+/* firma */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@
 h1,
 h2,
 h3 {
-  font-family: 'Rubik Distressed';
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   background: #cf7419;
   background: linear-gradient(to right, #cf7419 0%, #402007 100%);
@@ -27,7 +29,6 @@ h1 {
 h2 {
   font-size: 2.2rem;
 }
-
 p,
 a {
   font-family: 'Alumni Sans Pinstripe', sans-serif;
@@ -43,39 +44,27 @@ button {
 section {
   margin-top: 5%;
   display: flex;
-  justify-content: space-between;
-}
-section h2 {
-  width: 50%;
+  justify-content: space-evenly;
 }
 section a {
-  width: 50%;
+  border: 1px solid #c6ad88;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.2rem;
   font-weight: 700;
-  animation: colores 2s infinite;
 }
-@keyframes colores {
-  0% {
-    color: #cf7419;
-  }
-  20% {
-    color: #cf1414;
-  }
-  40% {
-    color: #e3bf1f;
-  }
-  60% {
-    color: #0db107;
-  }
-  80% {
-    color: #1d16e7;
-  }
-  100% {
-    color: #ee0e51;
-  }
+section a:hover {
+  cursor: pointer;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(219, 199, 168, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(219, 199, 168, 1);
+  box-shadow: 10px 10px 5px 0px rgba(219, 199, 168, 1);
+  transition: 0.3s;
 }
 button:hover {
   cursor: pointer;
@@ -90,10 +79,12 @@ button:hover {
 .container {
   display: flex;
   justify-content: space-around;
+  padding: 2%;
 }
 .box {
   margin-top: 5%;
   width: 10rem;
+  padding: 2%;
 }
 footer {
   margin-top: 14vh;
@@ -105,6 +96,9 @@ footer {
 }
 .icon {
   font-size: 3rem;
+}
+.jmgDev {
+  font-family: 'Orbitron', sans-serif;
 }
 .icon:hover {
   color: #cf7419;

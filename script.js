@@ -5,6 +5,7 @@ function btnInflacion() {
   function checkNumber() {
     if (isNaN(numeroX)) {
       alert('Por favor, introducir un número');
+      return;
     } else {
       calcularInflacion();
     }
@@ -15,6 +16,10 @@ function btnInflacion() {
     let PorcentajeNumX = (inflacionMensual * numeroX) / 100;
     let cantidadMeses = parseInt(prompt('Cantidad de meses'));
     let calculoInflacion = (cantidadMeses * PorcentajeNumX + numeroX).toFixed(2);
+    if (isNaN(inflacionMensual) || isNaN(PorcentajeNumX)) {
+      alert('Por favor, introducir valores válidos');
+      return;
+    }
     alert(
       `La inflación mensual es del ${inflacionMensual}%, es decir, lo que hoy vale $${numeroX}, dentro de ${cantidadMeses} meses, va a valer $${calculoInflacion}`
     );
@@ -30,7 +35,8 @@ function incremDecrem() {
 
   function checkNumber() {
     if (isNaN(primerValor) || isNaN(segundoValor)) {
-      alert('Por favor, introducir un número');
+      alert('Por favor, introducir valores válidos');
+      return;
     } else {
       calcularIncremDecrem();
     }
@@ -59,7 +65,8 @@ function incremMeses() {
 
   function checkNumber() {
     if (isNaN(primerValor) || isNaN(segundoValor)) {
-      alert('Por favor, introducir un número');
+      alert('Por favor, introducir valores válidos');
+      return;
     } else {
       calcularIncremTiempo();
     }
